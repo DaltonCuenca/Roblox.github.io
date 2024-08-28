@@ -1,0 +1,69 @@
+@import url(aprende.css);
+
+h2{
+    margin-top: 50px;
+}
+h1,
+h2, h3 {
+    padding: 8px;
+    color: #333;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+main p, 
+main a,
+main li {
+    font-size: 1.12rem;
+    padding: 20px;
+    color: #333;
+}
+
+main ol,
+main ul {
+    list-style: none;
+}
+main ol {
+    counter-reset: my-awesome-counter;
+}
+main ul li,
+main ol li{
+    margin: 0.25rem;
+}
+main ol li {
+    counter-increment: my-awesome-counter;
+}
+
+main li::before {
+    content: "+";
+    background: var(--azul2);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+main ol li::before {
+    content: counter(my-awesome-counter);
+}
+
+.img{
+    width: 80%;
+    margin: auto;
+    display: table;
+}
+.img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px){
+    *{
+        display: none;
+    }
+}
