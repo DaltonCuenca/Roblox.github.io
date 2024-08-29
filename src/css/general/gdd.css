@@ -1,0 +1,119 @@
+@import url(./../aprende.css);
+
+h2{
+    margin-top: 50px;
+}
+h1,
+h2, 
+h3, 
+h4 {
+    padding: 8px;
+    color: #333;
+}
+h4{
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 1.3rem;
+}
+hr {
+    margin: 10px 0;
+}
+.col-2{
+    display: flex;
+    width: 100%;
+}
+
+.img{
+    width: 40%;
+}
+.img img{
+    width: 100%;
+}
+
+main p, 
+main a,
+main li {
+    font-size: 1.12rem;
+    padding: 10px;
+    color: #333;
+}
+
+main ol,
+main ul {
+    list-style: none;
+}
+main ol {
+    counter-reset: my-awesome-counter;
+}
+main ul li,
+main ol li{
+    margin: 0.25rem;
+}
+main ol li {
+    counter-increment: my-awesome-counter;
+}
+
+main li::before {
+    content: ">";
+    background: var(--azul2);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+main ol li::before {
+    content: counter(my-awesome-counter);
+}
+
+.ejemplo{
+    background-color: var(--gris1);
+    width: fit-content;
+    border: 1px solid var(--azul2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 1200px){
+    .img{
+        width: 30%;
+    }
+    .texto{
+        width: 70%;
+    }
+}
+@media (max-width: 1030px){
+    .img{
+        width: 40%;
+    }
+    
+    .texto{
+        width: 60%;
+    }
+}
+@media (max-width: 880px){
+    .img{
+        width: 50%;
+    }
+    
+    .texto{
+        width: 50%;
+    }
+}
+@media (max-width: 700px){
+    .col-2{
+        display: block;
+    }
+    .img{
+        width: 60%;
+        margin: auto;
+    }
+    
+    .texto{
+        width: auto;
+    }
+}

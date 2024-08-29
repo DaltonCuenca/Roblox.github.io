@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento de diseño (GDD)</title>
+    <link rel="stylesheet" href="./../src/css/general/gdd.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./../index.html">Inicio</a></li>
+                <li><a href="./../index.html#info">Información</a></li>
+                <li><a href="./../aprende.html">Aprende lo básico</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenido">
+        <main>
+            <p>
+                <a href="./../aprende.html">volver</a>
+            </p>
+
+            <section class="definicion">
+                <h2>Documentación en Videojuegos</h2>
+                <hr>
+                <div class="col-2">
+                    <div class="texto">
+                        <p>
+                            Normalmente un juego es creado por un grupo de personas, las cuales incluye un diseñador de
+                            videojuegos, un diseñador, un artista 3D, un diseñador de sonido y un programador.
+                        </p>
+                        <p>
+                            Pero, ¿Cómo puede un diseñador de videojuegos explicarle a su equipo qué juego van a desarrollar?
+                        </p>
+                        <p>
+                            Para este propósito, el diseñador de videojuegos llena un documento de diseño para el futuro videojuego.
+                        </p>
+                        <p>
+                            Un documento de diseño es un documento donde el diseñador de videojuegos debe describir la idea del videojuego a detalle.
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="../src/images/docuemnto.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="gdd">
+                <h2>Construllendo un Documento de Diseño</h2>
+                <hr>
+                <h3>Un GDD generalmente incluye:</h3>
+                <ol>
+                    <li>
+                        <b>Resumen ejecutivo</b> (concepto del juego, género, público objetivo, alcance del proyecto, etc.)
+                    </li>
+                    <li>
+                        <b>Jugabilidad</b> (objetivos, progresiones del juego, GUI en el juego, etc.)
+                    </li>
+                    <li>
+                        <b>Historia y ambientación</b> (contexto, arcos narrativos)
+                    </li>
+                    <li>
+                        <b>Mundo del juego</b> (descripción del mundo en el que se desarrolla el juego)
+                    </li>
+                    <li>
+                        <b>Interfaz de usuario</b> (barra de salud, exp, etc)
+                    </li>
+                    <li>
+                        <b>Monetización</b>
+                    </li>
+                </ol>
+                <p>Hagamos un ejemplo</p>
+                <div class="ejemplo">
+                    <h3>Resumen del juego</h3>
+                    <ul>
+                        <li>
+                            <b>Título: </b>Ecos de Aeterna
+                        </li>
+                        <li>
+                            <b>Género: </b>Juego de estrategia y RPG
+                        </li>
+                        <li>
+                            <b>Plataforma: </b>PC
+                        </li>
+                        <li>
+                            <b>Público objetivo: </b>Jugadores de 16+ años, fans de RPGs y mundos abiertos
+                        </li>
+                        <li>
+                            <b>Resumen: </b>Ecos de Aeterna es un RPG de acción en mundo abierto ambientado en un reino de fantasía post-apocalíptico. Los jugadores explorarán las ruinas de una civilización antigua, descubriendo secretos del pasado mientras luchan contra criaturas corrompidas y facciones rivales.
+                        </li>
+                    </ul>
+                    <h3>Jugabilidad</h3>
+                    <h4>Mecánicas</h4>
+                    <ul>
+                        <li>
+                            Combate en tiempo real con sistema de clases flexibles
+                        </li>
+                        <li>Exploración de mundo abierto con énfasis en verticalidad</li>
+                        <li>Sistema de crafteo basado en reliquias antiguas</li>
+                        <li>Decisiones morales que afectan el mundo y la narrativa</li>
+                    </ul>
+                    <h4>Flujo del juego</h4>
+                    <ul>
+                        <li>Comenzar con una pequeña ciudad</li>
+                        <li>Combate de tutorial</li>
+                        <li>Aprender sistema de crafteo</li>
+                        <li>etc.</li>
+                    </ul>
+                    <h4>Controles</h4>
+                    <ul>
+                        <li>Interfaz point-and-click para PC</li>
+                    </ul>
+
+                    <h3>Historia y ambientación</h3>
+                    <h4>Contexto</h4>
+                    <p>
+                        En un mundo devastado por una catástrofe mágica hace siglos, el jugador despierta como un "Eco", un ser con la habilidad de absorber memorias de los objetos. A medida que explora Aeterna, debe descubrir la verdad detrás del cataclismo y decidir el destino del reino.
+                    </p>
+                    <h4>Entorno</h4>
+                    <ul>
+                        <li>Mapa dinámico</li>
+                        <li>Cambios visuales reflejando el nivel de contaminación</li>
+                        <li>Eventos climáticos (tormentas, olas de calor) que afectan la jugabilidad</li>
+                    </ul>
+                    <h4>Diseño de niveles</h4>
+                    <ul>
+                        <li>Los Bosques Susurrantes</li>
+                        <li>El Abismo de Cristal</li>
+                        <li>Las Ruinas de la Capital</li>
+                    </ul>
+                    <h4>Personajes</h4>
+                    <ul>
+                        <li>Protagonista (personalizable)</li>
+                        <li>Lyra: Mentora misteriosa</li>
+                        <li>Kain: Líder de los Salvadores, facción que busca restaurar la civilización</li>
+                        <li>Zara: Comandante de los Renegados, que abrazan el nuevo orden mundial</li>
+                    </ul>
+                    <h3>Interfaz de usuario</h3>
+                    <h4>HUD</h4>
+                    <ul>
+                        <li>Indicadores de vida, maná, EXP</li>
+                        <li>Minimapa</li>
+                    </ul>
+                    <h3>Menús</h3>
+                    <ul>
+                        <li>Ajustes</li>
+                        <li>Inventario</li>
+                        <li>Perfil de jugador</li>
+                    </ul>
+                    <h4>Monetización</h4>
+                    <ul>
+                        <li>Modelo de precio completo con posibles DLCs de expansión post-lanzamiento</li>
+                        <li>Compras dentro del juego</li>
+                        <li>Pase de temporada con desafíos mensuales</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
