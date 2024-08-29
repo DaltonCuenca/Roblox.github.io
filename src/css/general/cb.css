@@ -1,8 +1,12 @@
-@import url(aprende.css);
+@import url(./../aprende.css);
 
-h1{
+h2{
+    margin-top: 50px;
+}
+h1,
+h2, h3 {
     padding: 8px;
-    color: var(--azul2);
+    color: #333;
 }
 
 hr {
@@ -40,7 +44,7 @@ main li::before {
     border-radius: 50%;
     display: inline-block;
     line-height: 2rem;
-    color: var(--gris1);
+    color: white;
     text-align: center;
     margin-right: 0.5rem;
 }
@@ -58,15 +62,11 @@ main ol li::before {
     border-radius: 10px;
 }
 
-section.indice {
-    background-color: var(--gris1);
-    border: 1px solid var(--azul2);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-section.indice li a{
-    color: var(--azul2);
-    text-decoration: none;
-    font-size: 1.2rem;
+@media (max-width: 700px){
+    aside{
+        display: none;
+    }
+    main{
+        width: 100vw;
+    }
 }
