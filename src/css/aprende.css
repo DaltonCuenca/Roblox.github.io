@@ -10,6 +10,7 @@ body{
     padding-top: 6vh;
 }
 aside{
+    display: none;
     background-color: var(--azul2);
     position: relative;
     width: 20vw;
@@ -37,7 +38,7 @@ aside ul li a:hover{
 }
 main{
     padding: 20px 10%;
-    width: 80vw;
+    width: 100vw;
     line-height: 1.8rem;
     overflow-y: scroll;
 }

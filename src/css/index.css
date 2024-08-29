@@ -75,6 +75,7 @@ body {
 .info-section h3,
 .info-section b {
     color: var(--azul2);
+    margin-top: 20px;
 }
 
 .card-planes {
@@ -175,4 +176,37 @@ footer p {
     .card-planes .card {
         width: 100%;
     }
+}
+
+
+
+.info-section ol,
+.info-section ul {
+    list-style: none;
+}
+.info-section ol {
+    counter-reset: my-awesome-counter;
+}
+.info-section ul li,
+.info-section ol li{
+    margin: 0.25rem;
+}
+.info-section ol li {
+    counter-increment: my-awesome-counter;
+}
+
+.info-section li::before {
+    content: "+";
+    background: var(--azul2);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.info-section ol li::before {
+    content: counter(my-awesome-counter);
 }
